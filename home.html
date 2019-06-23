@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Thales Rocha</title>
+    <meta content="Designer multidisciplinar focado na criação de produtos digitais." name="description">
+    <meta content="Thales Rocha" property="og:title">
+    <meta content="Designer multidisciplinar focado na criação de produtos digitais" property="og:description">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <script type="text/javascript">
+    function changeBgImage (image, id) {
+    	var element = document.getElementById(id);
+    	element.style.backgroundImage = "url("+image+")";
+    }
+
+    function changeBack (image, id) {
+    	var element = document.getElementById(id);
+    	element.style.backgroundImage = "url("+image+")";
+    }
+
+    </script>
+  </head>
+  <body>
+    <div class="top">
+      <div class="welcome fade-in">
+        <p class="title-white"> Olá, sou Thales Rocha. 🤙 </p>
+        <p class="title-white"> Designer multidisciplinar focado na criação de produtos digitais, atualmente faço parte do time de design da <a class="link-top" href="http://trin.ca" target="_blank">Trinca.</a></p>
+        <p class="social"> <a class="link-social" href="http://dribbble.com/thalesrocha" target="_blank">Dribbble</a> <a class="link-social" href="https://www.linkedin.com/in/thalesrcha/" target="_blank">LinkedIn</a> <a class="link-social" href="mailto:thalesrochars@gmail.com">Email</a></p>
+      </div>
+    </div>
+    <div id="bg">
+      <div id="work">
+        <nav class="menu menu__projects">
+          <a class="menu__item" href="#" onMouseOver="changeBgImage('images/onni.jpg', 'bg')" onMouseOut="changeBack(',', 'bg')">
+            <span class="menu__item-name">Onni</span>
+          </a>
+          <a class="menu__item" href="#" onMouseOver="changeBgImage('images/pas.jpg', 'bg')" onMouseOut="changeBack(',', 'bg')">
+            <span class="menu__item-name">Pan American School</span>
+          </a>
+          <a class="menu__item" href="#" onMouseOver="changeBgImage('images/mapfre.jpg', 'bg')" onMouseOut="changeBack(',', 'bg')">
+            <span class="menu__item-name">MAPFRE</span>
+          </a>
+          <a class="menu__item" href="#">
+            <span class="menu__item-name">RedBull</span>
+          </a>
+        </nav>
+      </div>
+    </div>
+    <footer style="padding-left: 25%; padding-right: 25%;">
+      <div style= "padding-bottom: 2%;">
+        <p style="color: #BBBBBB; font-family: Inter, sans-serif; font-size: 14px;">Designed and developed by me. 💩</p>
+      </div>
+    </footer>
+  </body>
+</html>
