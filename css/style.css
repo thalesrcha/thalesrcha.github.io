@@ -131,7 +131,7 @@ margin-top: -2%;
 .menu__projects .menu__item:hover .menu__item-name {
   cursor: pointer;
   opacity: 1;
-  color: white;
+  color: #0C0C0C;
 }
 
 .footer {
