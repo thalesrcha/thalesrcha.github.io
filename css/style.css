@@ -14,10 +14,10 @@ body {
 .title-white {
   font-family: Inter, sans-serif;
   font-style: normal;
-  font-weight: 500;
-  font-size: 38px;
-  line-height: 53px;
-  letter-spacing: -0.03em;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.01em;
   color: #F4F4F4;
 }
 
@@ -29,10 +29,10 @@ body {
 
 
 .welcome {
-  max-width: 550px;
+  max-width: 480px;
   padding-right: 20%;
   padding-left: 25%;
-  margin-top: 8%;
+  margin-top: 20%;
   height: auto;
   display:inline-block;
 }
@@ -53,12 +53,12 @@ body {
 .social {
 font-family: Inter, sans-serif;
 font-style: normal;
-font-weight: 500;
-font-size: 18px;
+font-weight: 400;
+font-size: 16px;
 line-height: 27px;
 letter-spacing: -0.03em;
 word-spacing: 24px;
-margin-top: -2%;
+margin-top: 4%;
 
 }
 
