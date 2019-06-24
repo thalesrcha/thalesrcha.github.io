@@ -15,24 +15,24 @@ body {
   font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 32px;
-  letter-spacing: -0.01em;
-  color: #F4F4F4;
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: -1.8%;
+  color: white;
 }
 
 .top {
   height: 100vh;
   width: 100%;
-  background-color: #0C0C0C;
+  background-color: black;
 }
 
 
 .welcome {
-  max-width: 480px;
-  padding-right: 20%;
-  padding-left: 25%;
-  margin-top: 20%;
+  max-width: 440px;
+  padding-right: 18%;
+  padding-left: 18%;
+  margin-top: 18%;
   height: auto;
   display:inline-block;
 }
@@ -43,6 +43,7 @@ body {
   -moz-transition: opacity 0.3s ease-out;
   -o-transition: opacity 0.3s ease-out;
   transition: opacity 0.3s ease-out;
+  text-decoration: underline;
 }
 .link-top:hover {
   opacity: 0.6;
