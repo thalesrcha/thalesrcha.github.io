@@ -29,16 +29,19 @@
     <div class="top">
       <div class="welcome fade-in">
         <p class="title-white">Thales Rocha.</p>
-        <p class="title-white">Designer multidisciplinar focado na criação de produtos digitais, atualmente trabalhando no time de design da <a class="link-top" href="http://trin.ca" target="_blank">Trinca</a>.</p>
+        <p class="title-white">Designer multidisciplinar focado na criação de produtos digitais, atualmente trabalhando no time de design na <a class="link-top" href="http://trin.ca" target="_blank">Trinca</a>.</p>
         <p class="social"> <a class="link-social" href="http://dribbble.com/thalesrocha" target="_blank">Dribbble</a> <a class="link-social" href="https://www.linkedin.com/in/thalesrcha/" target="_blank">LinkedIn</a> <a class="link-social" href="mailto:thalesrochars@gmail.com">Email</a></p>
       </div>
       <div id="graph">
         <script>
             // Define text style
-            var text = new Blotter.Text('tr', {
+            var text = new Blotter.Text('///////', {
             	family: "'Inter', sans-serif",
-              size: 420,
+              size: 200,
               fill: "#fff",
+              paddingTop: 280,
+              paddingBottom: 10,
+              paddingLeft: 800,
             });
 
             // Use a material
@@ -46,11 +49,11 @@
             var material = new Blotter.FliesMaterial();
 
             // Set material opts
-            material.uniforms.uPointCellWidth.value = 0.003;
-            material.uniforms.uPointRadius.value = 0.4;
+            material.uniforms.uPointCellWidth.value = 0.002;
+            material.uniforms.uPointRadius.value = 0.3;
             material.uniforms.uSpeed.value = 6.1;
             material.uniforms.uDodge.value = 1;
-            material.uniforms.uDodgeSpread.value = 0.2;
+            material.uniforms.uDodgeSpread.value = 0.4;
 
             var blotter = new Blotter(material, {
               texts: text
@@ -68,16 +71,13 @@
       <div id="work">
         <nav class="menu menu__projects">
           <a class="menu__item" href="#" onMouseOver="changeBgImage('images/onni2.jpg', 'bg')" onMouseOut="changeBack(',', 'bg')">
-            <span class="menu__item-name">Onni</span>
+            <span class="menu__item-name">/Onni</span>
           </a>
           <a class="menu__item" href="#" onMouseOver="changeBgImage('images/pas.jpg', 'bg')" onMouseOut="changeBack(',', 'bg')">
-            <span class="menu__item-name">Pan American School</span>
+            <span class="menu__item-name">/Pan American School</span>
           </a>
           <a class="menu__item" href="#" onMouseOver="changeBgImage('images/onni.jpg', 'bg')" onMouseOut="changeBack(',', 'bg')">
-            <span class="menu__item-name">MAPFRE</span>
-          </a>
-          <a class="menu__item" href="#">
-            <span class="menu__item-name">RedBull</span>
+            <span class="menu__item-name">/MAPFRE</span>
           </a>
         </nav>
       </div>
