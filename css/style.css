@@ -11,11 +11,33 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+#header {
+  overflow: hidden;
+  background-color: black;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 5%;
+}
+
+#name {
+  font-family: Inter, sans-serif;
+  font-style: medium;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 116%;
+  letter-spacing: -0.03em;
+  color: #F4F4F4;
+  margin-top: 4%;
+  position: absolute;
+
+}
+
+
 .title-white {
   font-family: Inter, sans-serif;
   font-style: medium;
   font-weight: 500;
-  font-size: 64px;
+  font-size: 62px;
   line-height: 116%;
   letter-spacing: -0.03em;
   color: #F4F4F4;
@@ -34,7 +56,9 @@ body {
   z-index: 100;
   max-width: 940px;
   padding-left: 15%;
-  margin-top: 25%;
+  margin-top: 18%;
+  padding-right: 15%;
+  margin-bottom: 20%;
 }
 
 .link-top {
@@ -51,17 +75,16 @@ body {
 
 }
 
-.social {
+#social {
 font-family: Inter, sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 16px;
 line-height: 24px;
-letter-spacing: -0.03em;
+letter-spacing: -0.08em;
 word-spacing: 24px;
 margin-top: 4%;
-position: absolute;
-text-align: right;
+float: right;
 
 }
 
@@ -88,14 +111,6 @@ text-align: right;
   -ms-animation: fadeIn ease 2.2s;
 }
 
-.fade-in-graph {
-  animation: fadeIn ease 4s;
-  -webkit-animation: fadeIn ease 4s;
-  -moz-animation: fadeIn ease 4s;
-  -o-animation: fadeIn ease 4s;
-  -ms-animation: fadeIn ease 4s;
-}
-
 #bg {
   background-image: "";
   width: 100%;
@@ -110,17 +125,18 @@ text-align: right;
 #work {
   padding-right: 15%;
   padding-left: 12%;
-  margin-top: 20%;
+  margin-top: 16%;
   margin-bottom:10%;
   z-index: 200;
 }
 
 .menu__projects {
   font-family: Inter, sans-serif;
-  font-size: 24px;
+  font-size: 42px;
   font-style: bold;
   font-weight: 500;
   letter-spacing: -1.8%;
+  letter-spacing: -0.03em;
 }
 
 .menu__projects .menu__item {
@@ -144,20 +160,6 @@ text-align: right;
   color: #0C0C0C;
 }
 
-
-.name {
-  font-family: Inter, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 116%;
-  letter-spacing: -0.03em;
-  color: #F4F4F4;
-  padding-left: 15%;
-  margin-top: 4%;
-  position: absolute;
-
-}
 
 @keyframes fadeIn{
   0% {
