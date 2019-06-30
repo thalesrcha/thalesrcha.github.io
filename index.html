@@ -9,18 +9,8 @@
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link href="css/normalize.css" rel="stylesheet" type="text/css">
     <link rel="shortcut icon" href="images/favicon.png">
-    <script type="text/javascript">
-    function changeBgImage (image, id) {
-    	var element = document.getElementById(id);
-    	element.style.backgroundImage = "url("+image+")";
-    }
-
-    function changeBack (image, id) {
-    	var element = document.getElementById(id);
-    	element.style.backgroundImage = "url("+image+")";
-    }
-
-    </script>
+    <script src="js/blotter.min.js"></script>
+    <script src="js/channelSplitMaterial.js"></script>
   </head>
   <body>
     <div class="top">
@@ -28,6 +18,32 @@
         <p class="title-white">Thales Rocha.</p>
         <p class="title-white">Designer multidisciplinar focado na criação de produtos digitais, atualmente trabalhando no time de design da <a class="link-top" href="http://trin.ca" target="_blank">Trinca.</a></p>
         <p class="social"> <a class="link-social" href="http://dribbble.com/thalesrocha" target="_blank">Dribbble</a> <a class="link-social" href="https://www.linkedin.com/in/thalesrcha/" target="_blank">LinkedIn</a> <a class="link-social" href="mailto:thalesrochars@gmail.com">Email</a></p>
+      </div>
+      <div style="background-color: blue;">
+        <script>
+
+          var text = new Blotter.Text ("/", {
+            family: "'Inter', sans-serif",
+            size: 200,
+            fill: "666",
+          })
+
+          var material = new Blotter.ChannelSplitMaterial();
+          material.uniforms.uOffset.value = 0.016;
+          material.uniforms.uRotation.value = 45;
+
+
+          var blotter = new Blotter(material, {
+            texts: text
+          });
+
+          // Apply to element
+          var scope = blotter.forText(text);
+          scope.appendTo(document.body);
+
+
+
+        </script>
       </div>
     </div>
     <div id="bg">
