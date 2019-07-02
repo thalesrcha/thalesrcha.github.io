@@ -21,9 +21,9 @@ body {
 
 #name {
   font-family: Inter, sans-serif;
-  font-style: medium;
-  font-weight: 500;
-  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
   line-height: 116%;
   letter-spacing: -0.03em;
   color: #F4F4F4;
@@ -37,8 +37,8 @@ body {
   font-family: Inter, sans-serif;
   font-style: medium;
   font-weight: 500;
-  font-size: 42px;
-  line-height: 116%;
+  font-size: 48px;
+  line-height: 126%;
   letter-spacing: -0.03em;
   color: #F4F4F4;
 }
@@ -48,13 +48,13 @@ body {
   width: 100%;
   background-color: black;
   position: relative;
-  display: -webkit-box;
+  display: flex;
 }
 
 
 .welcome {
   z-index: 100;
-  max-width: 650px;
+  max-width: 750px;
   padding-left: 15%;
   margin-top: 12%;
   padding-right: 15%;
@@ -79,7 +79,7 @@ body {
 font-family: Inter, sans-serif;
 font-style: normal;
 font-weight: 400;
-font-size: 16px;
+font-size: 14px;
 line-height: 24px;
 letter-spacing: -0.08em;
 word-spacing: 24px;
