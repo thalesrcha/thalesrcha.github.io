@@ -104,27 +104,13 @@ float: right;
 .link-social {
   color: #F4F4F4;
   text-decoration: none;
-  position: relative;
   letter-spacing: 0em;
+  transition: 0.5s ease;
 }
 
-.link-social::before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 1px;
-  background-color: #F4F4F4;
-  transform-origin: bottom right;
-  transform: scaleX(0);
-  transition: transform 0.5s ease;
-}
-.link-social:hover::before {
+.link-social:hover {
   cursor: pointer;
-  transform-origin: bottom left;
-  transform: scaleX(1);
-
+  opacity: 0.5;
 }
 
 .fade-in {
@@ -172,10 +158,10 @@ float: right;
 .menu__projects .menu__item-name {
   color: black;
   opacity: 0.2;
-  -webkit-transition: opacity 0.3s ease;
-  -moz-transition: opacity 0.3s ease;
-  -o-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
+  -webkit-transition: opacity 0.5s ease;
+  -moz-transition: opacity 0.5s ease;
+  -o-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
 }
 
 .menu__projects .menu__item:hover .menu__item-name {
