@@ -14,18 +14,18 @@ body {
 #header {
   overflow: hidden;
   background-color: black;
-  padding-left: 15%;
-  padding-right: 15%;
-  padding-top: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 2%;
 }
 
 #name {
   font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 116%;
-  letter-spacing: 0em;
+  letter-spacing: -0.03em;
   color: #F4F4F4;
   margin-top: 4%;
   position: absolute;
@@ -35,16 +35,16 @@ body {
 
 .title-white {
   font-family: Inter, sans-serif;
-  font-style: medium;
-  font-weight: 500;
-  font-size: 48px;
-  line-height: 126%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 140%;
   letter-spacing: -0.03em;
   color: #F4F4F4;
 }
 
 .top {
-  height: auto;
+  height: 100vh;
   width: 100%;
   background-color: black;
   position: relative;
@@ -54,17 +54,16 @@ body {
 
 .welcome {
   z-index: 100;
-  max-width: 750px;
+  max-width: 430px;
   padding-left: 15%;
   margin-top: 10%;
   padding-right: 15%;
-  margin-bottom: 20%;
 }
 
 .link-top::before {
   content: '';
   position: absolute;
-  height: 4px;
+  height: 2px;
   bottom: 0;
   left: 0;
   right: 0;
@@ -90,9 +89,9 @@ body {
 font-family: Inter, sans-serif;
 font-style: normal;
 font-weight: 400;
-font-size: 14px;
+font-size: 12px;
 line-height: 24px;
-letter-spacing: -0.08em;
+letter-spacing: -0.03em;
 word-spacing: 24px;
 margin-top: 4%;
 float: right;
@@ -104,7 +103,7 @@ float: right;
 .link-social {
   color: #F4F4F4;
   text-decoration: none;
-  letter-spacing: 0em;
+  letter-spacing: -0.03em;
   transition: 0.5s ease;
 }
 
@@ -142,10 +141,9 @@ float: right;
 
 .menu__projects {
   font-family: Inter, sans-serif;
-  font-size: 42px;
-  font-style: bold;
-  font-weight: 500;
-  letter-spacing: -1.8%;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 400;
   letter-spacing: -0.03em;
 }
 
