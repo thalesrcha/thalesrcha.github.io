@@ -270,10 +270,10 @@ float: right;
 }
 
 .project_body {
-  margin-left: 35%;
-  margin-right: 35%;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 14%;
-  max-width: 516px;
+  width: 516px;
   font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 400;
