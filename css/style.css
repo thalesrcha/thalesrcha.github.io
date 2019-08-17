@@ -11,6 +11,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.project_body b {
+  font-family: Inter, sans-serif;
+  font-style: medium;
+  font-weight: 600;
+}
+
+.project_body p {
+  margin: 16px;
+}
+
 #header {
   overflow: hidden;
   background-color: black;
@@ -37,8 +47,8 @@ body {
   font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 32px;
+  font-size: 42px;
+  line-height: 64px;
   letter-spacing: -0.03em;
   color: #F4F4F4;
 }
@@ -54,9 +64,9 @@ body {
 
 .welcome {
   z-index: 100;
-  max-width: 368px;
-  padding-left: 10%;
-  margin-top: 22%;
+  max-width: 600px;
+  padding-left: 20%;
+  margin-top: 20%;
   padding-right: 15%;
 }
 
@@ -141,7 +151,7 @@ float: right;
 
 .menu__projects {
   font-family: Inter, sans-serif;
-  font-size: 20px;
+  font-size: 26px;
   font-style: normal;
   font-weight: 400;
   letter-spacing: -0.03em;
