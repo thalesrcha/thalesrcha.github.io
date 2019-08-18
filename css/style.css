@@ -48,8 +48,8 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 42px;
-  line-height: 64px;
-  letter-spacing: -0.03em;
+  line-height: 56px;
+  letter-spacing: -0.06em;
   color: #F4F4F4;
 }
 
@@ -65,8 +65,8 @@ body {
 .welcome {
   z-index: 100;
   max-width: 600px;
-  padding-left: 20%;
-  margin-top: 20%;
+  padding-left: 15%;
+  margin-top: 12%;
   padding-right: 15%;
 }
 
@@ -154,7 +154,7 @@ float: right;
   font-size: 26px;
   font-style: normal;
   font-weight: 400;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.06em;
 }
 
 .menu__projects .menu__item {
@@ -250,7 +250,7 @@ float: right;
   font-weight: 500;
   font-size: 68px;
   line-height: 80px;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.08em;
   color: black;
   max-width: 525px;
   margin-right: 8%;
