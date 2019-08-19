@@ -123,11 +123,11 @@ float: right;
 }
 
 .fade-in {
-  animation: fadeIn ease 3s;
-  -webkit-animation: fadeIn ease 3s;
-  -moz-animation: fadeIn ease 3s;
-  -o-animation: fadeIn ease 3s;
-  -ms-animation: fadeIn ease 3s;
+  animation: fadeIn ease 2s;
+  -webkit-animation: fadeIn ease 2s;
+  -moz-animation: fadeIn ease 2s;
+  -o-animation: fadeIn ease 2s;
+  -ms-animation: fadeIn ease 2s;
 }
 
 #bg {
@@ -250,7 +250,7 @@ float: right;
   font-weight: 500;
   font-size: 68px;
   line-height: 80px;
-  letter-spacing: -0.08em;
+  letter-spacing: -0.06em;
   color: black;
   max-width: 525px;
   margin-right: 8%;
