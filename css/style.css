@@ -108,7 +108,6 @@ margin-top: 4%;
 }
 
 
-
 .link-social {
   color: #F4F4F4;
   text-decoration: none;
@@ -394,4 +393,11 @@ margin-top: 4%;
   font-style:  bold;
   font-weight: 600;
   src: url('fonts/Inter-Bold.otf') format('opentype');
+}
+
+@media (max-width: 600px) {
+  .title-white {
+    font-size: 33px;
+    line-height: 51px;
+  }
 }
