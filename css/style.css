@@ -397,7 +397,17 @@ margin-top: 4%;
 
 @media (max-width: 600px) {
   .title-white {
-    font-size: 33px;
-    line-height: 51px;
+    font-size: 26px;
+    line-height: 41px;
+  }
+
+  .project_title {
+    font-size: 26px;
+    line-height: 41px;
+    margin-bottom: 4%;
+  }
+
+  #project_top {
+    flex-direction: column;
   }
 }
