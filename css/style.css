@@ -402,12 +402,21 @@ margin-top: 4%;
   }
 
   .project_title {
-    font-size: 26px;
-    line-height: 41px;
+    font-size: 33px;
+    line-height: 51px;
     margin-bottom: 4%;
   }
 
   #project_top {
     flex-direction: column;
+    margin-left: 24px;
+  }
+
+  .welcome {
+    padding-left: 8px;
+  }
+
+  .project_body {
+    margin-left: 4%;
   }
 }
