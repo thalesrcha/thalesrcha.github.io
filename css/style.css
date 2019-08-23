@@ -397,8 +397,8 @@ margin-top: 4%;
 
 @media (max-width: 600px) {
   .title-white {
-    font-size: 26px;
-    line-height: 41px;
+    font-size: 33px;
+    line-height: 43px;
   }
 
   .project_title {
@@ -413,7 +413,7 @@ margin-top: 4%;
   }
 
   .welcome {
-    padding-left: 8px;
+    padding-left: 6%;
   }
 
   .project_body {
