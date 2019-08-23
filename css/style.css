@@ -297,8 +297,7 @@ margin-top: 4%;
   margin-right: 5%;
   margin-bottom: 14%;
   width: 90%;
-  height: 900px;
-  background-color: #f2f2f2;
+  height: auto;
 
 }
 
@@ -359,6 +358,15 @@ margin-top: 4%;
 .project_header_social_link:hover {
   cursor: pointer;
   opacity: 0.5;
+}
+
+
+#project_team {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 4%;
+  margin-right: 4%;
+  margin-bottom: 6%;
 }
 
 
