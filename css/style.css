@@ -419,4 +419,8 @@ margin-top: 4%;
   .project_body {
     margin-left: 4%;
   }
+
+  .menu__projects .menu__item-name {
+    opacity: 1;
+  }
 }
