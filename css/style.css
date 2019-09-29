@@ -46,8 +46,8 @@ body {
   font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 68px;
-  line-height: 78px;
+  font-size: 38px;
+  line-height: 64px;
   letter-spacing: -0.06em;
   color: #F4F4F4;
 }
@@ -63,9 +63,9 @@ body {
 
 .welcome {
   z-index: 100;
-  max-width: 600px;
+  max-width: 540px;
   padding-left: 15%;
-  margin-top: 6%;
+  margin-top: 24%;
   padding-right: 15%;
   margin-bottom: 8%;
 }
