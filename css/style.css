@@ -65,7 +65,7 @@ body {
   z-index: 100;
   max-width: 540px;
   padding-left: 20%;
-  margin-top: 24%;
+  margin-top: 18%;
   padding-right: 15%;
   margin-bottom: 8%;
 }
@@ -345,17 +345,9 @@ margin-top: 4%;
 }
 
 .project_header_social_link {
-  font-family: Inter, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 24px;
-  letter-spacing: -0.03em;
-  word-spacing: 24px;
-  margin-top: 4%;
-  margin-right: 4%;
-  text-decoration: none;
   color: black;
+  text-decoration: none;
+  letter-spacing: -0.03em;
   transition: 0.5s ease;
 }
 
