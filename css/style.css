@@ -45,10 +45,10 @@ body {
 .title-white {
   font-family: Inter, sans-serif;
   font-style: normal;
-  font-weight: 400;
-  font-size: 38px;
-  line-height: 58px;
-  letter-spacing: -0.06em;
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 68px;
+  letter-spacing: -4px;
   color: #F4F4F4;
 }
 
@@ -63,10 +63,9 @@ body {
 
 .welcome {
   z-index: 100;
-  max-width: 540px;
-  padding-left: 20%;
-  margin-top: 18%;
-  padding-right: 15%;
+  max-width: 860px;
+  padding-left: 10%;
+  margin-top: 10%;
   margin-bottom: 8%;
 }
 
@@ -141,13 +140,13 @@ margin-top: 4%;
 
 
 #work {
-  padding-left: 20%;
+  padding-left: 10%;
   align-self: center;
   z-index: 200;
 }
 
 .empty {
-  align-self:center;
+  align-self: center;
   margin-right: 30%;
   z-index: -200;
 }
@@ -156,7 +155,7 @@ margin-top: 4%;
   font-family: Inter, sans-serif;
   font-size: 32px;
   font-style: medium;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: -0.06em;
 }
 
@@ -250,10 +249,10 @@ margin-top: 4%;
 .project_title {
   font-family: Inter, sans-serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 300;
   font-size: 68px;
   line-height: 80px;
-  letter-spacing: -0.06em;
+  letter-spacing: -4px;
   color: black;
   max-width: 525px;
   margin-right: 8%;
