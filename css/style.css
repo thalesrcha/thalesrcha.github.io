@@ -155,23 +155,34 @@ margin-top: 4%;
   font-family: Inter, sans-serif;
   font-size: 32px;
   font-style: medium;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: -0.06em;
+  -webkit-transition: opacity 0.5s ease;
+  -moz-transition: opacity 0.5s ease;
+  -o-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
 }
 
 .menu__projects .menu__item {
   margin: 0.5em 0;
   text-decoration: none;
   display: block;
-}
-
-.menu__projects .menu__item-name {
-  color: black;
-  opacity: 0.2;
   -webkit-transition: opacity 0.5s ease;
   -moz-transition: opacity 0.5s ease;
   -o-transition: opacity 0.5s ease;
   transition: opacity 0.5s ease;
+}
+
+.menu__projects .menu__item-name {
+  color: black;
+}
+
+.menu__projects .menu__item:hover {
+  opacity: 1 !important;
+}
+
+.menu__projects:hover .menu__item{
+  opacity: 0.2;
 }
 
 .menu__projects .menu__item:hover .menu__item-name {
