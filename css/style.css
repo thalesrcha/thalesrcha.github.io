@@ -192,6 +192,35 @@ margin-top: 4%;
   color: #0C0C0C;
 }
 
+.trinca {
+  position: relative;
+  text-decoration: none;
+}
+
+.trinca:visited {
+  color: #F4F4F4;
+}
+
+.trinca::before {
+  content: '';
+  position: absolute;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #F4F4F4;
+  transform-origin: bottom left;
+  transform: scaleX(1);
+  transition: transform 0.6s ease-in-out;
+  text-decoration: none;
+}
+
+.trinca:hover::before {
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  text-decoration: none;
+}
+
 @keyframes fadeIn{
   0% {
     opacity:0;
