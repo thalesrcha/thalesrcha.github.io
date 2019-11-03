@@ -10,21 +10,6 @@
     <link href="css/normalize.css" rel="stylesheet" type="text/css">
     <link rel="shortcut icon" href="images/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script>
-
-      function changeBgImage (image, id) {
-        var element = document.getElementById(id);
-        var bg = document.querySelector('bg')
-        bg.style.transition = 'all 2s';
-        element.style.backgroundImage = "url("+image+")";
-      }
-  
-      function changeBack (image, id) {
-        var element = document.getElementById(id);
-        element.style.backgroundImage = "url("+image+")";
-      }
-  
-      </script>
   </head>
   <body>
     <div id="header"><div id="name" class="fade-in"> Thales Rocha </div>
@@ -54,4 +39,19 @@
       </div>
     </div>
   </body>
+  <script>
+
+    function changeBgImage (image, id) {
+    	var element = document.getElementById(id);
+      var bg = document.querySelector('bg')
+      bg.style.transition = 'all 2s';
+    	element.style.backgroundImage = "url("+image+")";
+    }
+
+    function changeBack (image, id) {
+    	var element = document.getElementById(id);
+    	element.style.backgroundImage = "url("+image+")";
+    }
+
+    </script>
 </html>
