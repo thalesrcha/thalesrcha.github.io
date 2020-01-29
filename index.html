@@ -1,55 +1,83 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Thales Rocha —— Product Designer</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta content="Designer multidisciplinar focado na criação de produtos digitais." name="description">
     <meta content="Thales Rocha" property="og:title">
     <meta content="Designer multidisciplinar focado na criação de produtos digitais" property="og:description">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
-    <link href="css/normalize.css" rel="stylesheet" type="text/css">
-    <link rel="shortcut icon" href="images/favicon.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <title>Thales Rocha —— Product Designer</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    
+    <div id="home">
 
-      function changeBgImage (image, id) {
-        var element = document.getElementById(id);
-        element.style.backgroundImage = "url("+image+")";
-      }
+        <div class="header fade-in one">
+            <div class="nome"><p>Thales Rocha</p></div>
+            <ul class="social">
+                <li><a href="">Dribbble</a></li>
+                <li><a href="">LinkedIn</a></li>
+                <li><a href="">E-mail</a></li>
+            </ul>
+        </div>
+        <div class="title fade-in two"><h1>Thales Rocha —— Product Designer focado na criação de produtos digitais, atualmente trabalhando no time de design da <a href="">Trinca.</a></h1></div>
 
-      function changeBack (image, id) {
-        var element = document.getElementById(id);
-        element.style.backgroundImage = "url("+image+")";
-      }
-
-  </script>
-  </head>
-  <body>
-    <div id="header"><div id="name" class="fade-in"> Thales Rocha </div>
-    <div id="social" class="fade-in"><a class="link-social" href="http://dribbble.com/thalesrocha" target="_blank">Dribbble</a> <a class="link-social" href="https://www.linkedin.com/in/thalesrcha/" target="_blank">LinkedIn</a> <a class="link-social" href="mailto:thalesrochars@gmail.com">Email</a></div></div>
-    <div class="top">
-      <div class="welcome fade-in">
-        <p class="title-white">Thales Rocha —— Product Designer focado na criação de produtos digitais, trabalhando no time de design da <a class="trinca" href="https://trin.ca" target="_blank">Trinca</a>.</p>
-      </div>
     </div>
-    <div id="bg">
-      <div id="work">
-        <nav class="menu menu__projects">
-          <a class="menu__item" href="onni.html" onMouseOver="changeBgImage('images/onni.jpg', 'bg')" onMouseOut="changeBack(',', 'bg')">
-            <span class="menu__item-name">ONNi</span>
-          </a>
-          <a class="menu__item" href="paspoa.html" onMouseOver="changeBgImage('images/pas.jpg', 'bg')" onMouseOut="changeBack(',', 'bg')">
-            <span class="menu__item-name">PASPOA</span>
-          </a>
-          <a class="menu__item" onMouseOver="changeBgImage('images/gringo.jpg', 'bg')" onMouseOut="changeBack(',', 'bg')">
-            <span class="menu__item-name">Gringo</span>
-          </a>
-          <a class="menu__item" href="#" onMouseOver="changeBgImage('images/mapfre.jpg', 'bg')" onMouseOut="changeBack(',', 'bg')">
-            <span class="menu__item-name">MAPFRE 🔒</span>
-          </a>
-          </a>
-        </nav>
-      </div>
+
+    <div class="work">
+        <ul class="projects">
+            <li class="onni"><a href="onni.html">ONNi</a></li>
+            <li class="paspoa"><a href="paspoa.html">PASPOA</a></li>
+            <li class="gringo"><a href="gringo">Gringo</a></li>
+            <li class="mapfre"><a href="mapfre">MAPFRE</a></li>
+        </ul>
+        <div class="bg-work"></div>
     </div>
-  </body>
+
+</body>
+
+<script> 
+
+var bg = document.querySelector('.bg-work');
+var onni = document.querySelector('.onni');
+var paspoa = document.querySelector('.paspoa');
+var gringo = document.querySelector('.gringo');
+
+onni.addEventListener("mouseover", () => {
+    bg.style.opacity = "1";
+    bg.style.backgroundImage = "url('../images/onni.jpg')";
+})
+
+onni.addEventListener("mouseleave", () => {
+    bg.style.opacity = "0";
+    bg.style.backgroundImage = "";
+})
+
+
+paspoa.addEventListener("mouseover", () => {
+    bg.style.opacity = "1";
+    bg.style.backgroundImage = "url('../images/pas.jpg')";
+})
+
+paspoa.addEventListener("mouseleave", () => {
+    bg.style.opacity = "0";
+    bg.style.backgroundImage = "";
+})
+
+
+gringo.addEventListener("mouseover", () => {
+    bg.style.opacity = "1";
+    bg.style.backgroundImage = "url('../images/gringo.jpg')";
+})
+
+gringo.addEventListener("mouseleave", () => {
+    bg.style.opacity = "0";
+    bg.style.backgroundImage = "";
+})
+
+</script>
 </html>
