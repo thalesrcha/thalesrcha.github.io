@@ -7,7 +7,7 @@ html { font-family: 'Inter', sans-serif; }
 
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Friends', sans-serif;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -20,7 +20,7 @@ body {
     color: #f4f4f4;
     font-size: 14px;
     letter-spacing: -0.006em;
-    font-weight: 400;
+    font-weight: normal;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -70,7 +70,7 @@ body {
     line-height: 120%;
     font-weight: 300;
     letter-spacing: -0.022em;
-    width: 75vw;
+    width: 72vw;
 }
 
 .title a {
@@ -95,6 +95,13 @@ body {
 .title a:hover::before {
     transform: scaleX(0);
     transform-origin: bottom right;
+}
+
+
+.footer-home {
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 8%;
 }
 
 
@@ -251,7 +258,7 @@ body {
 }
 
 .project-content p span{
-    font-weight: 600;
+    font-weight: bold;
 }
 
 .project-image {
@@ -334,3 +341,27 @@ body {
     -moz-animation-delay: 1.2s;
     animation-delay: 1.2s;
   }
+
+
+
+
+  /* FONTS */
+  
+@font-face {
+    font-family: "Friends";
+    src: url("../fonts/Friends-Regular.woff") format('woff');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Friends";
+    src: url("../fonts/Friends-Italic.woff") format('woff');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Friends";
+    src: url("../fonts/Friends-Normal.woff");
+    font-style: normal;
+	font-weight: normal;
+}
