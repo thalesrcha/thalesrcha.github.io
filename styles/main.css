@@ -29,17 +29,13 @@ canvas {
     }
 
     .description {
-        width: 80%;
+        min-width: 80%;
+        padding-top: 48px;
     }
 
     .links {
-        width: 80%;
-        font-size: 1.4rem;
-    }
-
-    .container .description p {
-        font-size: 1.4rem;
-        max-width: 100%;
+        min-width: 80%;
+        padding-bottom: 48px;
     }
   }
 
