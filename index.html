@@ -13,75 +13,74 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    
-    <div id="home">
+    <script src="https://code.jquery.com/pep/0.4.3/pep.js"></script>
+    <script src="./scripts/blob.js"></script>
 
-        <div class="header fade-in one">
-            <div class="nome"><p>Thales Rocha</p></div>
+    <div class="container">
+      <div class="info">  
+        <div class="description fade-in two"><p><span>Thales Rocha</span></p><p>Brazilian multi-disciplinary designer based in Porto Alegre, currently working at <a href="http://www.trin.ca">Trinca</a></p>
+        </div>
+
+         <div class="links fade-in two">
             <ul class="social">
                 <li><a href="">Dribbble</a></li>
                 <li><a href="">LinkedIn</a></li>
                 <li><a href="">E-mail</a></li>
             </ul>
         </div>
-        <div class="title fade-in two"><h1>Thales Rocha — Product Designer focado na criação de produtos digitais, atualmente trabalhando no time de design da <a href="">Trinca.</a></h1></div>
-
+     </div> 
     </div>
 
     <div class="work">
         <ul class="projects">
             <li class="onni"><a href="onni.html">ONNi</a></li>
             <li class="paspoa"><a href="paspoa.html">PASPOA</a></li>
-            <li class="gringo"><a href="gringo">Gringo</a></li>
+            <li class="gringo"><a href="gringo.html">Gringo</a></li>
         </ul>
         <div class="bg-work"></div>
     </div>
 
-    <div class="footer-home">
-        <div class="email">thalesrochars@gmail.com</div>
-        <div class="copy">© 2020 Thales Rocha</div>
 
-    </div>
 </body>
 
 <script> 
 
-var bg = document.querySelector('.bg-work');
-var onni = document.querySelector('.onni');
-var paspoa = document.querySelector('.paspoa');
-var gringo = document.querySelector('.gringo');
-
-onni.addEventListener("mouseover", () => {
-    bg.style.opacity = "1";
-    bg.style.backgroundImage = "url('../images/onni.jpg')";
-})
-
-onni.addEventListener("mouseleave", () => {
-    bg.style.opacity = "0";
-    bg.style.backgroundImage = "";
-})
-
-
-paspoa.addEventListener("mouseover", () => {
-    bg.style.opacity = "1";
-    bg.style.backgroundImage = "url('../images/pas.jpg')";
-})
-
-paspoa.addEventListener("mouseleave", () => {
-    bg.style.opacity = "0";
-    bg.style.backgroundImage = "";
-})
-
-
-gringo.addEventListener("mouseover", () => {
-    bg.style.opacity = "1";
-    bg.style.backgroundImage = "url('../images/gringo.jpg')";
-})
-
-gringo.addEventListener("mouseleave", () => {
-    bg.style.opacity = "0";
-    bg.style.backgroundImage = "";
-})
-
-</script>
-</html>
+    var bg = document.querySelector('.bg-work');
+    var onni = document.querySelector('.onni');
+    var paspoa = document.querySelector('.paspoa');
+    var gringo = document.querySelector('.gringo');
+    
+    onni.addEventListener("mouseover", () => {
+        bg.style.opacity = "1";
+        bg.style.backgroundImage = "url('../images/onni.jpg')";
+    })
+    
+    onni.addEventListener("mouseleave", () => {
+        bg.style.opacity = "0";
+        bg.style.backgroundImage = "";
+    })
+    
+    
+    paspoa.addEventListener("mouseover", () => {
+        bg.style.opacity = "1";
+        bg.style.backgroundImage = "url('../images/pas.jpg')";
+    })
+    
+    paspoa.addEventListener("mouseleave", () => {
+        bg.style.opacity = "0";
+        bg.style.backgroundImage = "";
+    })
+    
+    
+    gringo.addEventListener("mouseover", () => {
+        bg.style.opacity = "1";
+        bg.style.backgroundImage = "url('../images/gringo.jpg')";
+    })
+    
+    gringo.addEventListener("mouseleave", () => {
+        bg.style.opacity = "0";
+        bg.style.backgroundImage = "";
+    })
+    
+    </script>
+    </html>

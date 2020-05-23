@@ -7,82 +7,130 @@ html { font-family: 'Inter', sans-serif; }
 
 
 body {
-    font-family: 'Friends', sans-serif;
+    font-family: 'Inter', sans-serif;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
-#home {
+canvas { 
+    position: absolute;
+    touch-action: none; 
+    z-index: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    canvas {
+      display: none;
+    }
+    .info {
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .description {
+        width: 80%;
+    }
+
+    .links {
+        width: 80%;
+        font-size: 1.4rem;
+    }
+
+    .container .description p {
+        font-size: 1.4rem;
+        max-width: 100%;
+    }
+  }
+
+.container {
+    background: black;
     height: 100vh;
-    background: #0c0c0c;
-    padding: 6% 8%;
-    color: #f4f4f4;
-    font-size: 14px;
-    letter-spacing: -0.006em;
-    font-weight: normal;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: -0.03em;
 }
 
-.header {
+.info {
+    width: 1000px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.header .social {
+.description {
+    width: 30%;
+    z-index: 100;
+}
+
+.blob {
+    width: 50%;
+    height: 50%;
+}
+
+.links {
+    z-index: 100;
+    width: 25%;
+    font-size: 1.1rem;
+}
+
+
+.container .description p {
+    font-size: 1.1rem;
+    line-height: 142%;
+    font-weight: 300;
+    max-width: 270px;
+}
+
+.container .description p span {
+    font-weight: 500;
+}
+
+.links .social {
     list-style: none;
     transition: opacity 300ms;
 }
 
-.header .social:hover li a {
+.links .social:hover li a {
     opacity: 0.4;
 }
 
-.header .social li {
-    display: inline;
-    margin-right: 24px;
+ul { 
+    padding-inline-start: 0px;
+    margin-top: 40px;
 }
 
-#home .header .social li a {
+.links .social li {
+    display: inline;
+    margin-right: 16px;
+}
+
+.links .social li a {
     color: #f4f4f4;
     text-decoration: none;
     transition: opacity 300ms;
 }
 
-.header .social li a:hover {
+.links .social li a:hover {
     opacity: 1 !important;
 }
 
-.header .social li:last-child {
+.links .social li:last-child {
     margin-right: 0px;
 }
 
-
-.title {
-    padding-left: 4%;
-    margin-bottom: 10%;
-}
-
-.title h1 {
-    font-size: 54px;
-    line-height: 120%;
-    font-weight: 300;
-    letter-spacing: -0.022em;
-    width: 72vw;
-}
-
-.title a {
+.description a {
     position: relative;
     text-decoration: none;
     color: #f4f4f4;
 }
 
-.title a::before {
+.description a::before {
     content: '';
     position: absolute;
-    height: 3px;
+    height: 1px;
     bottom: 0;
     left: 0;
     right: 0;
@@ -92,17 +140,12 @@ body {
     transition: transform 0.6s ease-in-out;
 }
   
-.title a:hover::before {
+.description a:hover::before {
     transform: scaleX(0);
     transform-origin: bottom right;
 }
 
 
-.footer-home {
-    display: flex;
-    justify-content: space-between;
-    padding: 3% 8%;
-}
 
 
 /*         WORK        */
@@ -136,7 +179,7 @@ body {
 .projects {
     list-style: none;
     transition: all 600ms;
-    padding-left: 12%;
+    padding-left: 8%;
 }
 
 .projects:hover li a {
@@ -210,8 +253,8 @@ body {
 .resumo h1 {
     font-size: 68px;
     line-height: 120%;
-    font-weight: 400;
-    letter-spacing: -0.022em;
+    font-weight: 300;
+    letter-spacing: -0.042em;
     max-width: 500px;
     margin-top: 0;
 }
@@ -310,6 +353,9 @@ body {
 
 
 
+
+
+
 /* make keyframes that tell the start state and the end state of our object */
 @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
@@ -341,27 +387,3 @@ body {
     -moz-animation-delay: 1.2s;
     animation-delay: 1.2s;
   }
-
-
-
-
-  /* FONTS */
-  
-@font-face {
-    font-family: "Friends";
-    src: url("../fonts/Friends-Regular.woff") format('woff');
-    font-weight: bold;
-}
-
-@font-face {
-    font-family: "Friends";
-    src: url("../fonts/Friends-Italic.woff") format('woff');
-    font-style: italic;
-}
-
-@font-face {
-    font-family: "Friends";
-    src: url("../fonts/Friends-Normal.woff");
-    font-style: normal;
-	font-weight: normal;
-}
