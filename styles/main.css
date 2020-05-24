@@ -365,6 +365,7 @@ ul {
       display: none;
     }
     .info {
+        justify-content: space-around;
         flex-direction: column;
         height: 100vh;
     }
