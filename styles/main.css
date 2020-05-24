@@ -136,6 +136,18 @@ ul {
     background-position: center;
     background-size: cover;
     position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.work .selected p {
+    transform: rotate(90deg);
+    padding-top: 20%;
+    z-index: -10;
+}
+
+.selected {
+    opacity: 1;
 }
 
 .bg-work {
@@ -155,7 +167,7 @@ ul {
 .projects {
     list-style: none;
     transition: all 600ms;
-    padding-left: 8%;
+    padding-left: 12%;
 }
 
 .projects:hover li a {

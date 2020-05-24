@@ -18,7 +18,7 @@
 
     <div class="container">
       <div class="info">  
-        <div class="description fade-in two"><p><span>Thales Rocha</span></p><p>Brazilian multi-disciplinary designer based in Porto Alegre, currently working at <a href="http://www.trin.ca">Trinca</a></p>
+        <div class="description fade-in one"><p><span>Thales Rocha</span></p><p>Brazilian multi-disciplinary designer based in Porto Alegre, currently working at <a href="http://www.trin.ca">Trinca</a></p>
         </div>
 
          <div class="links fade-in two">
@@ -37,6 +37,9 @@
             <li class="paspoa"><a href="paspoa.html">PASPOA</a></li>
             <li class="gringo"><a href="gringo.html">Gringo</a></li>
         </ul>
+        <div class="selected">
+            <p>Selected works</p>
+        </div>
         <div class="bg-work"></div>
     </div>
 
@@ -49,35 +52,43 @@
     var onni = document.querySelector('.onni');
     var paspoa = document.querySelector('.paspoa');
     var gringo = document.querySelector('.gringo');
+    var selected = document.querySelector('.selected')
     
     onni.addEventListener("mouseover", () => {
+        selected.style.opacity = "0";
         bg.style.opacity = "1";
         bg.style.backgroundImage = "url('../images/onni.jpg')";
+
     })
     
     onni.addEventListener("mouseleave", () => {
+        selected.style.opacity = "1";
         bg.style.opacity = "0";
         bg.style.backgroundImage = "";
     })
     
     
     paspoa.addEventListener("mouseover", () => {
+        selected.style.opacity = "0";
         bg.style.opacity = "1";
         bg.style.backgroundImage = "url('../images/pas.jpg')";
     })
     
     paspoa.addEventListener("mouseleave", () => {
+        selected.style.opacity = "1";
         bg.style.opacity = "0";
         bg.style.backgroundImage = "";
     })
     
     
     gringo.addEventListener("mouseover", () => {
+        selected.style.opacity = "0";
         bg.style.opacity = "1";
         bg.style.backgroundImage = "url('../images/gringo.jpg')";
     })
     
     gringo.addEventListener("mouseleave", () => {
+        selected.style.opacity = "1";
         bg.style.opacity = "0";
         bg.style.backgroundImage = "";
     })
