@@ -266,7 +266,9 @@ ul {
 }
 
 .project-content {
-    padding: 20% 30%;
+    padding: 20% 0%;
+    max-width: 516px;
+    margin: auto;
 }
 
 .project-content p {
