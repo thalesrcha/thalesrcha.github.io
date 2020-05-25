@@ -1,3 +1,5 @@
+/* blob by Liam Egan https://codepen.io/shubniggurath/pen/EmMzpp */
+
 let canvas, ctx;
 let render, init;
 let blob;
